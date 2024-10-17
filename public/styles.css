@@ -1,0 +1,12 @@
+.heading {
+  color: red;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  border-bottom: solid;
+}
+.food-image {
+  height: 100px;
+  width: 100px;
+  align-items: center;
+}
