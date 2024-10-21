@@ -1,3 +1,14 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
 .heading {
   color: red;
   text-align: center;
@@ -62,6 +73,22 @@ footer p {
   margin-bottom: 6px;
 }
 .note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.card {
+  color: red;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+  font-size: 1.1em;
+  margin-bottom: 6px;
   font-size: 1.1em;
   margin-bottom: 10px;
   white-space: pre-wrap;
