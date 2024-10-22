@@ -34,17 +34,25 @@
 html {
   font-family: "Montserrat", sans-serif;
 }
-body {
-  background: #eee;
+  body{
+    background: #eee;
   padding: 0 16px;
-}*/
+  }*/
+
+.App {
+  display: grid;
+  position: absolute;
+  padding: 0%;
+  width: auto;
+  align-content: space-evenly;
+}
 
 header {
   background-color: #f5ba13;
-  margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
   border-radius: 8px;
+  text-align: center;
 }
 
 header h1 {
@@ -64,6 +72,7 @@ footer {
 footer p {
   color: #ccc;
 }
+
 /*.note {
   background: #fff;
   border-radius: 7px;
@@ -83,7 +92,7 @@ footer p {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
-.card {
+/*.card {
   color: red;
   background: #fff;
   border-radius: 7px;
@@ -103,11 +112,10 @@ footer p {
 body {
   font-family: sans-serif;
   margin: 0 auto;
-  padding: 25px;
+  padding: 0 25px;
   max-width: 400px;
   min-width: 400px;
-  background-color: #dfe6e9;
-  text-align: center;
+  background: #dfe6e9;
 }
 
 .heading {
@@ -117,10 +125,16 @@ body {
   margin: 20px 0 30px;
 }
 
+.card-div {
+  align-items: center;
+  position: relative;
+}
+
 .card {
   border-radius: 25px;
   position: relative;
   padding: 25px 15px;
+  max-width: 400px;
   background-color: #81ecec;
   margin: 50px 0;
   height: 200px;
