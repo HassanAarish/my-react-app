@@ -1,15 +1,30 @@
 import Avatar from "./components/Avatar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Card from "./components/Props";
 import contacts from "./data/data";
+import Card from "./components/Props";
+
+function createCard(contact) {
+  return (
+    <Card
+      key={contact.id}
+      id={contact.id}
+      name={contact.name}
+      img={contact.imgURL}
+      phone={contact.phone}
+      email={contact.email}
+      relationship={contact.relationship}
+    />
+  );
+}
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Header />
-      <div className="card-div">
-        <Avatar img={"https://picsum.photos/200"} />
+      <Avatar img={"https://picsum.photos/200"} />
+      <div className="card-div">{contacts.map(createCard)}</div>
+      {/* <div className="card-div">
         <Card
           name={contacts[0].name}
           img={contacts[0].imgURL}
@@ -45,7 +60,7 @@ function App() {
           email={contacts[4].email}
           relationship={contacts[4].relationship}
         />
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

@@ -5,6 +5,7 @@ function Card(Props) {
   return (
     <div className="card">
       <div className="top">
+        <p>{Props.id}</p>
         <h2 className="name">{Props.name}</h2>
         <Avatar img={Props.img} />
       </div>

@@ -1,5 +1,6 @@
 const contacts = [
   {
+    id: 1,
     name: "Beyonce",
     imgURL:
       "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",
@@ -8,14 +9,16 @@ const contacts = [
     relationship: "Friend",
   },
   {
+    id: 2,
     name: "Jack Bauer",
     imgURL:
-      "https://pbs.twimg.com/profile_images/625247595825246208/X3XLea04_400x400.jpg",
+      "https://www.writeups.org/wp-content/uploads/Jack-Bauer-24-Kiefer-Sutherland.jpg",
     phone: "+987 654 321",
     email: "jack@nowhere.com",
     relationship: "Friend",
   },
   {
+    id: 3,
     name: "Chuck Norris",
     imgURL:
       "https://i.pinimg.com/originals/e3/94/47/e39447de921955826b1e498ccf9a39af.png",
@@ -24,6 +27,7 @@ const contacts = [
     relationship: "Friend",
   },
   {
+    id: 4,
     name: "Horror",
     imgURL: "https://picsum.photos/200",
     phone: "horror_98@icloud.com",
@@ -31,6 +35,7 @@ const contacts = [
     relationship: "Friend",
   },
   {
+    id: 5,
     name: "Token",
     imgURL: "https://picsum.photos/200",
     phone: "aarishhassan98@gmail.com",
@@ -38,6 +43,7 @@ const contacts = [
     relationship: "Friend",
   },
   {
+    id: 0,
     name: "",
     imgURL: "",
     phone: "",
