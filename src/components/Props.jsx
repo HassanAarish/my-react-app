@@ -1,10 +1,15 @@
 function Card(Props) {
   return (
     <div className="card">
-      <h2>{Props.name}</h2>
-      <img src={Props.img} alt="Image" />
-      <p>{Props.email}</p>
-      <p>{Props.tel}</p>
+      <div className="top">
+        <h2 className="name">{Props.name}</h2>
+        <img className="circle-img" src={Props.img} alt="avatar_img" />
+      </div>
+      <div className="bottom">
+        <p className="info">{Props.phone}</p>
+        <p className="info">{Props.email}</p>
+        <p className="info">{Props.relationship}</p>
+      </div>
     </div>
   );
 }
