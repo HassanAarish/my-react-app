@@ -27,18 +27,6 @@ const emojipedia = [
     meaning:
       "Huge glasses, awkward smile and buck teeth. Used humorously or ironically for nerds or to express how smart you are. Stereotype of a nerd; a smart but funny-dressed person with social deficits.",
   },
-  {
-    id: 5,
-    emoji: "",
-    name: "Nothing ness",
-    meaning: "I am an invisible emoji",
-  },
-  {
-    id: 6,
-    emoji: "",
-    name: "Nothingness",
-    meaning: "I am an invisible emoji 2.0",
-  },
 ];
 
 export default emojipedia;
