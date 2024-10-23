@@ -1,22 +1,21 @@
 import { useState } from "react";
 
 function App() {
-  let isDone = false;
-  function strikeThrough() {
-    isDone = true;
+  const [count, setCount] = useState(0);
+
+  function increase() {
+    setCount(count + 1);
   }
 
-  function unStrikeThrough() {
-    isDone = false;
+  function decrease() {
+    setCount(count - 1);
   }
-  // style={{ textDecoration: "line-through" }}
-  // const [isDone, setIsDone] = useState(false);
 
   return (
-    <div>
-      <p style={isDone ? { textDecoration: "line-through" } : null}>Buy Milk</p>
-      <button onClick={strikeThrough}>Click To Change</button>
-      <button onClick={unStrikeThrough}>Click To Change Back</button>
+    <div className="container">
+      <h1>{count}</h1>
+      <button onClick={decrease}>-</button>
+      <button onClick={increase}>+</button>
     </div>
   );
 }
