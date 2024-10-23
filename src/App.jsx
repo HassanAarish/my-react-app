@@ -1,21 +1,15 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Note from "./components/Note";
-import notes from "./data/notes";
+import Login from "./components/Login";
 
 function App() {
+  let isLoggedin = false;
+  const currentTime = new Date().getHours();
+  console.log("🚀 ~ currentTime:", currentTime);
   return (
-    <div>
-      <Header />
-      {notes.map((notes) => (
-        <Note
-          key={notes.key}
-          id={notes.key}
-          title={notes.title}
-          content={notes.content}
-        />
-      ))}
-      <Footer />
+    <div className="container">
+      {/* Ternary Operator */}
+      {isLoggedin ? <h1>Hello</h1> : <Login />}
+      {/* AND Operator */}
+      {/* {currentTime > 12 && <h1>Why are you still working?</h1>} */}
     </div>
   );
 }
