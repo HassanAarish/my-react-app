@@ -9,18 +9,6 @@ const newEmojipedia = emojipedia.map(function (emojiEntry) {
 console.log("🚀 ~ Emoji Data:", emojipedia);
 console.log("🚀 ~ Emoji result:", newEmojipedia);
 
-function createEmoji(emojipedia) {
-  return (
-    <Entry
-      key={emojipedia.id}
-      id={emojipedia.id}
-      emoji={emojipedia.emoji}
-      name={emojipedia.name}
-      description={emojipedia.meaning}
-    />
-  );
-}
-
 function App() {
   return (
     <div>
@@ -30,7 +18,17 @@ function App() {
           <span>emojipedia</span>
         </h1>
 
-        <dl className="dictionary">{emojipedia.map(createEmoji)}</dl>
+        <dl className="dictionary">
+          {emojipedia.map((emojipedia) => (
+            <Entry
+              key={emojipedia.id}
+              id={emojipedia.id}
+              emoji={emojipedia.emoji}
+              name={emojipedia.name}
+              description={emojipedia.meaning}
+            />
+          ))}
+        </dl>
       </div>
       <Footer />
     </div>
