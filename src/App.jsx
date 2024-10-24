@@ -1,21 +1,34 @@
 import { useState } from "react";
 
 function App() {
-  setInterval(handleTime, 1000);
+  const [headingText, setHeadingText] = useState("Hello");
+  const [isMouseOver, setIsMouseOver] = useState(false);
 
-  let currentTime = new Date().toLocaleTimeString();
+  function handleClick() {
+    setHeadingText("New Heading");
+    console.log("🚀 ~ heading text changed:");
+  }
 
-  const [time, setTime] = useState(currentTime);
+  function handleMouseOver() {
+    setIsMouseOver(true);
+  }
 
-  function handleTime() {
-    const newTime = new Date().toLocaleTimeString();
-    setTime(newTime);
+  function handleMouseOut() {
+    setIsMouseOver(false);
   }
 
   return (
     <div className="container">
-      <h1>{time}</h1>
-      <button onClick={handleTime}>Get Time</button>
+      <h1>{headingText}</h1>
+      <input type="text" placeholder="What's your name?" />
+      <button
+        style={{ backgroundColor: isMouseOver ? "black" : "white" }}
+        onClick={handleClick}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      >
+        Submit
+      </button>
     </div>
   );
 }
