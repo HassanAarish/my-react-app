@@ -1,36 +1,36 @@
-import { useState } from "react";
+import React, { Component } from "react";
+import ClassComponent from "./components/ClassComponents";
+import FunctionalComponent from "./components/FunctionalComponents";
+
+// Class
+// class App extends Component {
+//   render() {
+//     return <h1>Hello</h1>;
+//   }
+// }
+// export default App;
+
+// class App extends Component {
+//   render() {
+//     return <ClassComponent />;
+//   }
+// }
+// export default App;
+
+// class App extends React.Component {
+//   render() {
+//     return <ClassComponent />;
+//   }
+// }
+// export default App;
+
+// Hook
+// function App() {
+//   return <h1>Hello</h1>;
+// }
+// export default App;
 
 function App() {
-  const [headingText, setHeadingText] = useState("Hello");
-  const [isMouseOver, setIsMouseOver] = useState(false);
-
-  function handleClick() {
-    setHeadingText("New Heading");
-    console.log("🚀 ~ heading text changed:");
-  }
-
-  function handleMouseOver() {
-    setIsMouseOver(true);
-  }
-
-  function handleMouseOut() {
-    setIsMouseOver(false);
-  }
-
-  return (
-    <div className="container">
-      <h1>{headingText}</h1>
-      <input type="text" placeholder="What's your name?" />
-      <button
-        style={{ backgroundColor: isMouseOver ? "black" : "white" }}
-        onClick={handleClick}
-        onMouseOver={handleMouseOver}
-        onMouseOut={handleMouseOut}
-      >
-        Submit
-      </button>
-    </div>
-  );
+  return <FunctionalComponent />;
 }
-
 export default App;
